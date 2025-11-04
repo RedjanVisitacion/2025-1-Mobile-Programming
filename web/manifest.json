@@ -1,6 +1,6 @@
 {
-    "name": "elecom_system",
-    "short_name": "elecom_system",
+    "name": "rpsv_app",
+    "short_name": "rpsv_app",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

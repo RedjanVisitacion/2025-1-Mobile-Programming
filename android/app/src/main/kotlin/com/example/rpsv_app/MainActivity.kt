@@ -1,4 +1,4 @@
-package com.example.elecom_system
+package com.example.rpsv_app
 
 import io.flutter.embedding.android.FlutterActivity
 

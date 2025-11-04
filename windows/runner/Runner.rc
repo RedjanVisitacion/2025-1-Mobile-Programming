@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "elecom_system" "\0"
+            VALUE "FileDescription", "rpsv_app" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "elecom_system" "\0"
+            VALUE "InternalName", "rpsv_app" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2025 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "elecom_system.exe" "\0"
-            VALUE "ProductName", "elecom_system" "\0"
+            VALUE "OriginalFilename", "rpsv_app.exe" "\0"
+            VALUE "ProductName", "rpsv_app" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
