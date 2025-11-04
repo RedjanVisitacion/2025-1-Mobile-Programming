@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import '../../globals.dart' as g;
@@ -18,6 +16,10 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Colors.transparent,
         surfaceTintColor: Colors.transparent,
         elevation: 0,
+        foregroundColor: Colors.white,
+        iconTheme: const IconThemeData(color: Colors.white),
+        actionsIconTheme: const IconThemeData(color: Colors.white),
+        titleTextStyle: const TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w600),
         title: const Text('Features'),
         flexibleSpace: Container(
           decoration: const BoxDecoration(
@@ -54,6 +56,13 @@ class HomeScreen extends StatelessWidget {
             },
           ),
         ],
+        bottom: PreferredSize(
+          preferredSize: const Size.fromHeight(1),
+          child: Container(
+            height: 1,
+            color: Colors.white,
+          ),
+        ),
       ),
       body: Container(
         decoration: const BoxDecoration(
@@ -74,7 +83,7 @@ class HomeScreen extends StatelessWidget {
                   border: Border.all(color: Colors.white, width: 0.3),
                 ),
                 child: const CircleAvatar(
-                  radius: 40,
+                  radius: 56,
                   backgroundColor: Colors.white24,
                   backgroundImage: AssetImage('assets/images/RPSV-ICON.png'),
                 ),

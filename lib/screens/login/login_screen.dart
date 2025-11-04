@@ -41,7 +41,9 @@ class _LoginScreenState extends State<LoginScreen> {
           child: ConstrainedBox(
             constraints: const BoxConstraints(maxWidth: 420),
             child: Card(
-              elevation: 8,
+              color: Theme.of(context).colorScheme.surface.withOpacity(0.8),
+              surfaceTintColor: Colors.transparent,
+              elevation: 0,
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
               child: Padding(
                 padding: const EdgeInsets.all(24),
@@ -51,10 +53,14 @@ class _LoginScreenState extends State<LoginScreen> {
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
-                        Icon(Icons.memory, size: 36),
-                        SizedBox(width: 8),
-                        Text('Tech Login', style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold)),
+                      children: [
+                        const CircleAvatar(
+                          radius: 16,
+                          backgroundImage: AssetImage('assets/images/RPSV-ICON.png'),
+                          backgroundColor: Colors.transparent,
+                        ),
+                        const SizedBox(width: 8),
+                        const Text('Tech Login', style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold)),
                       ],
                     ),
                     const SizedBox(height: 24),
