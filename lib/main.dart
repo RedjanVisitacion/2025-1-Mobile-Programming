@@ -27,6 +27,17 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Device Features',
+      theme: ThemeData(
+        useMaterial3: true,
+        colorSchemeSeed: const Color(0xFF00BCD4),
+        brightness: Brightness.light,
+      ),
+      darkTheme: ThemeData(
+        useMaterial3: true,
+        colorSchemeSeed: const Color(0xFF00BCD4),
+        brightness: Brightness.dark,
+      ),
+      themeMode: ThemeMode.system,
       home: const LoginScreen(),
       routes: {
         '/home': (_) => const HomeScreen(),
